@@ -14,10 +14,22 @@ body{
     background: var(--primary-color-1);
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
+    
+}
+.back-img{
+    width: 100%;
     background-image: url(/images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -200px;
 }
 .container{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 375px;
     height: auto;
     background: var(--natural-color-1);
@@ -51,6 +63,10 @@ h1{
     line-height: 0.3;
     margin-top: 20px;
     margin-bottom: 20px;
+    background: var(--primary-color-1);
+    width: 300px;
+    margin: auto;
+    border-radius: 20px;
 }
 .big{
     color: var(--natural-color-3);
@@ -70,6 +86,7 @@ h1{
     margin-top: 30px;
     margin-bottom: 20px;
     margin-left: 40px;
+ 
 }
 button{
     padding: 15px 80px;
@@ -83,7 +100,9 @@ button{
     color: var(--natural-color-1);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.116) 0px 0px 0px 1px;
+
 }
+
 .cancel{
     text-align: center;
     height: 60px;
@@ -95,8 +114,18 @@ button{
 
 }
 
-@media screen and (max-width: 1440px){
-    body{
+@media screen and (min-width: 700px){
+    .back-img{
         background-image: url(/images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 0;
     }
+    .container{
+        left: 50%;
+        margin-left: -200px;
+    }
+
 }
