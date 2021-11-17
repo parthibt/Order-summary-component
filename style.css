@@ -12,4 +12,91 @@
 
 body{
     background: var(--primary-color-1);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+}
+.container{
+    width: 375px;
+    height: auto;
+    background: var(--natural-color-1);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.137) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.123) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.img img{
+    max-width: 375px;
+    border-radius: 15px 15px 0 0;
+}
+.text{
+    width: 300px;
+    margin: auto;
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+    color: var(--natural-color-3);
+}
+.line{
+    text-align: center;
+    font-size: 16px;
+    color: var(--natural-color-2);
+}
+.annual{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    line-height: 0.3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.big{
+    color: var(--natural-color-3);
+    font-weight: 700;
+}
+.number{
+    color: var(--natural-color-2);
+}
+.change a{
+    color: var(--primary-color-2);
+}
+.button{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+button{
+    padding: 15px 80px;
+    outline: none;
+    font-size: 16px;
+    white-space: nowrap;
+    font-family: inherit;
+    border: none;
+    background: var(--primary-color-2);
+    border-radius: 10px;
+    color: var(--natural-color-1);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.116) 0px 0px 0px 1px;
+}
+.cancel{
+    text-align: center;
+    height: 60px;
+}
+.cancel p{
+    color: var(--natural-color-2);
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+@media screen and (max-width: 1440px){
+    body{
+        background-image: url(/images/pattern-background-desktop.svg);
+    }
 }
